@@ -13,3 +13,15 @@
 #philosophy{
   font-size: 2vh;
 }
+
+
+#designerName{
+  font-weight: bolder;
+  font-size: 2vh;
+}
+
+#length{
+  max-width: 85vw;
+  margin-right: auto;
+  margin-left: auto;
+}
