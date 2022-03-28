@@ -1,6 +1,15 @@
-.nav{
-  background-color: #fefefe;
-  top: 0;
+
+/* About Section */
+.about {
+  background-color: #7b8e96;
+  color: #1e1834;
+}
+
+#brandStatement{
+  font-size: 4vh;
   font-weight: bolder;
-  border-radius: 10px;
+}
+
+#philosophy{
+  font-size: 2vh;
 }
