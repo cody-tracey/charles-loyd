@@ -1,27 +1,33 @@
-
 /* About Section */
 .about {
   background-color: #7b8e96;
   color: #1e1834;
 }
 
-#brandStatement{
+#brandStatement {
   font-size: 4vh;
   font-weight: bolder;
 }
 
-#philosophy{
+#philosophy {
   font-size: 2vh;
 }
 
-
-#designerName{
+#designerName {
   font-weight: bolder;
   font-size: 2vh;
 }
 
-#length{
+#length {
   max-width: 85vw;
   margin-right: auto;
   margin-left: auto;
+}
+
+.services {
+  background-color: #65555c;
+  color: #fefefe;
+}
+#clientPromise{
+  font-size: 3vh;
 }
