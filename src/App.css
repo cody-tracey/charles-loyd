@@ -1,3 +1,14 @@
+/* Contact */
+#email-phone{
+  background-color: #fefefe;
+  border-radius: 25px;
+}
+
+#email-phone a{
+  color: #1e1834;
+}
+
+
 /* About Section */
 .about {
   background-color: #7b8e96;

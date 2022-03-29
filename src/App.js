@@ -3,6 +3,7 @@ import './App.css';
 import { Container, Navbar, Nav, Row, Col, Image, Card } from 'react-bootstrap';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
+import { FaMapMarkerAlt } from 'react-icons/fa';
 import designs from './assets/designs';
 
 //Images
@@ -14,7 +15,24 @@ function App() {
   return (
     <Container>
       <Row className='contact'>
-        {/* This will be the nav bar */}
+        <Navbar fixed='top'>
+          <Nav >
+            <Container className=''>
+              <Row id='email-phone'>
+                <Col xs={12} className='text-center'>
+                  <a href="mailto:charles@charlesloyd.com"><MdEmail />charles@charlesloyd.com</a>
+                </Col>
+                <Col xs={12} className='text-center'>
+                  <a href="tel:615-895-6196"><BsFillTelephoneFill />615.895.6196</a>
+                </Col>
+              </Row>
+
+
+
+            </Container>
+
+          </Nav>
+        </Navbar>
       </Row>
       <Row className='header'>
         {/* This will be the header */}
@@ -102,7 +120,14 @@ function App() {
         })}
       </Row>
 
-    </Container>
+      <Navbar>
+        <Nav >
+          <Container>
+            <p><FaMapMarkerAlt /> P.O. Box 2045 Murfreesboro, TN 37133 </p>
+          </Container>
+        </Nav>
+      </Navbar>
+    </Container >
   );
 }
 
