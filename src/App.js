@@ -1,8 +1,9 @@
 
 import './App.css';
-import { Container, Navbar, Nav, Row, Col, Image } from 'react-bootstrap';
+import { Container, Navbar, Nav, Row, Col, Image, Card } from 'react-bootstrap';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
+import designs from './assets/designs';
 
 //Images
 import temp from "./assets/images/tempImage.jpg";
@@ -19,7 +20,7 @@ function App() {
         {/* This will be the header */}
       </Row>
       <Row className='about pt-5 pb-5'>
-        <p  id='brandStatement'>My design philosophy is that everyone should live, work, and play in spaces that are pleasing to them.</p>
+        <p id='brandStatement'>My design philosophy is that everyone should live, work, and play in spaces that are pleasing to them.</p>
         <p className='text-justify pt-2' id='philosophy'>
           Often times simply rearranging the furniture in a room or painting it
           can totally bring a room to life. All too often, people deny
@@ -62,7 +63,6 @@ function App() {
         </Container>
       </Row>
       <Row className='services pt-5 pb-5'>
-
         <p id="clientPromise" >
           The success of space planning and consequently the entire design
           project is totally dependent on how well we have captured and
@@ -89,6 +89,17 @@ function App() {
             <li>Specialty in wood blinds</li>
           </ul>
         </Container>
+      </Row>
+      <Row className='designs pt-5 pb-5'>
+        {designs.map((item, index) => {
+          return (
+            <Col md={4} s={6} xs={12} className="pt-2 pb-2">
+              <Card key={index}>
+                <Card.Img src={item} />
+              </Card>
+            </Col>
+          )
+        })}
       </Row>
 
     </Container>
