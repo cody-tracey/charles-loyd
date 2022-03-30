@@ -1,15 +1,15 @@
 
-import './App.css';
 import { Container, Navbar, Nav, Row, Col, Image, Card } from 'react-bootstrap';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { FaMapMarkerAlt } from 'react-icons/fa';
-import designs from './assets/designs';
+
+import './App.css';
 
 //Images
 import temp from "./assets/images/tempImage.jpg";
 import charles from "./assets/images/charles.jpg";
-
+import designs from './assets/designs';
 
 function App() {
   return (
@@ -35,7 +35,15 @@ function App() {
         </Navbar>
       </Row>
       <Row className='header'>
-        {/* This will be the header */}
+        <Image src={temp} alt='Open Room' className='fluid' id='coverImg' />
+        <div class="headerTxt">
+          <div id="companyName">
+            <p>Charles Loyd Co.</p>
+          </div>
+          <div id="slogan">
+            <p>UNIQUELY TAILORED WITH A PERSONAL TOUCH</p>
+          </div>
+        </div>
       </Row>
       <Row className='about pt-5 pb-5'>
         <p id='brandStatement'>My design philosophy is that everyone should live, work, and play in spaces that are pleasing to them.</p>

@@ -1,15 +1,43 @@
-/* Contact */
-#email-phone{
+/* Contact Section------------------*/
+#email-phone {
   background-color: #fefefe;
   border-radius: 25px;
 }
 
-#email-phone a{
+#email-phone a {
   color: #1e1834;
 }
 
+/*Header Section------------------*/
+.header {
+  z-index: -1;
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
-/* About Section */
+#coverImg {
+  max-height: 60vh;
+  padding: 0;
+}
+.headerTxt {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#companyName {
+  font-size: 4vh;
+  font-weight: bold;
+  text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+#slogan {
+  font-size: 3vh;
+}
+
+/* About Section------------------*/
 .about {
   background-color: #7b8e96;
   color: #1e1834;
@@ -24,6 +52,7 @@
   font-size: 2vh;
 }
 
+/*Designer Section------------------*/
 #designerName {
   font-weight: bolder;
   font-size: 2vh;
@@ -35,10 +64,11 @@
   margin-left: auto;
 }
 
+/*Services Section------------------*/
 .services {
   background-color: #65555c;
   color: #fefefe;
 }
-#clientPromise{
+#clientPromise {
   font-size: 3vh;
 }
